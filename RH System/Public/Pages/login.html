@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RH System</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Src/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">RH System</a>
@@ -16,29 +17,29 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Public/index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="Pages/Funcio.html">Funcionários</a></li>
                     <li class="nav-item"><a class="nav-link" href="Pages/Vagas.html">Vagas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Pages/login.html">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <h1>Bem-vindo ao sistema de RH</h1>
-        <p>Gerencie funcionários e vagas de maneira eficiente.</p><br>
-        <p>Gerencie seu time de forma eficiente com nosso sistema de Recursos Humanos. Aqui, você pode: <br><br>
-
-            ✅ Cadastrar e visualizar colaboradores <br>
-            ✅ Gerenciar cargos e departamentos <br>
-            ✅ Acompanhar folha de pagamento e benefícios<br>
-            ✅ Controlar frequência e solicitações de férias<br><br>
-            
-            Acesse tudo em um só lugar e otimize a gestão da sua equipe! 🚀</p>
+    <div class="container mt-5" id="login">
+        <h2>Login</h2>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
     </div>
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="Src/Script.js"></script>
 </body>
 </html>
